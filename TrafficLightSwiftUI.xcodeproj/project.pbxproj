@@ -12,6 +12,7 @@
 		32EE47A32692124F00F2B6AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32EE47A22692124F00F2B6AB /* Preview Assets.xcassets */; };
 		32EE47AB269212FC00F2B6AB /* TrafficLightCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EE47AA269212FC00F2B6AB /* TrafficLightCircles.swift */; };
 		32EE47AF26921B3500F2B6AB /* TrafficLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EE47AE26921B3500F2B6AB /* TrafficLight.swift */; };
+		32EE47B12692202600F2B6AB /* TrafficLightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EE47B02692202600F2B6AB /* TrafficLightButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		32EE47A42692124F00F2B6AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32EE47AA269212FC00F2B6AB /* TrafficLightCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightCircles.swift; sourceTree = "<group>"; };
 		32EE47AE26921B3500F2B6AB /* TrafficLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLight.swift; sourceTree = "<group>"; };
+		32EE47B02692202600F2B6AB /* TrafficLightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				32EE479B2692124500F2B6AB /* TrafficLightSwiftUIApp.swift */,
 				32EE47AE26921B3500F2B6AB /* TrafficLight.swift */,
+				32EE47B02692202600F2B6AB /* TrafficLightButton.swift */,
 				32EE47AA269212FC00F2B6AB /* TrafficLightCircles.swift */,
 				32EE479F2692124F00F2B6AB /* Assets.xcassets */,
 				32EE47A42692124F00F2B6AB /* Info.plist */,
@@ -143,6 +146,7 @@
 			files = (
 				32EE479C2692124500F2B6AB /* TrafficLightSwiftUIApp.swift in Sources */,
 				32EE47AB269212FC00F2B6AB /* TrafficLightCircles.swift in Sources */,
+				32EE47B12692202600F2B6AB /* TrafficLightButton.swift in Sources */,
 				32EE47AF26921B3500F2B6AB /* TrafficLight.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

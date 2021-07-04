@@ -9,7 +9,19 @@ import SwiftUI
 
 struct TrafficLight: View {
     var body: some View {
-        Color(red: 255, green: 255, blue: 255)
+        ZStack {
+            Color(red: 0, green: 0.6, blue: 1)
+                .edgesIgnoringSafeArea(.all)
+            
+            VStack {
+                TrafficLightCircles()
+                .padding()
+                Spacer()
+                
+                TrafficLightButton()
+                    .padding()
+            }
+        }
     }
 }
 
