@@ -8,22 +8,15 @@
 import SwiftUI
 
 struct TrafficLightCircles: View {
+    let color: UIColor
+    let opacity: Double
+    
     var body: some View {
         VStack {
-            Color(.red)
+            Color(color)
                 .frame(width: 100, height: 100)
                 .clipShape(Circle())
-                .overlay(Circle().stroke(Color.white, lineWidth: 2))
-                .shadow(radius: 10)
-            Color(.yellow)
-                .frame(width: 100, height: 100)
-                .clipShape(Circle())
-                .overlay(Circle().stroke(Color.white, lineWidth: 2))
-                .shadow(radius: 10)
-                .padding()
-            Color(.green)
-                .frame(width: 100, height: 100)
-                .clipShape(Circle())
+                .opacity(opacity)
                 .overlay(Circle().stroke(Color.white, lineWidth: 2))
                 .shadow(radius: 10)
         }
@@ -32,6 +25,6 @@ struct TrafficLightCircles: View {
 
 struct TrafficLightCircles_Previews: PreviewProvider {
     static var previews: some View {
-        TrafficLightCircles()
+        TrafficLightCircles(color: .red, opacity: 0.3)
     }
 }

@@ -8,13 +8,12 @@
 import SwiftUI
 
 struct TrafficLightButton: View {
+//    @State private var action: () -> Void
     @State private var text = "Start"
-    @State private var redLight = TrafficLightCircles()
     
     var body: some View {
         Button(action: {
             text = "Next"
-            
         }) {
             ZStack {
                 Color(.orange)
