@@ -8,13 +8,11 @@
 import SwiftUI
 
 struct TrafficLightButton: View {
-//    @State private var action: () -> Void
-    @State private var text = "Start"
+    var title = ""
+    var action: () -> Void
     
     var body: some View {
-        Button(action: {
-            text = "Next"
-        }) {
+        Button(action: action) {
             ZStack {
                 Color(.orange)
                     .frame(width: 125, height: 50)
@@ -23,7 +21,7 @@ struct TrafficLightButton: View {
                     .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.white, lineWidth: 3))
                     .shadow(radius: 10)
                     
-                Text("\(text)")
+                Text("\(title)")
                     .font(.title)
                     .foregroundColor(.black)
             }
@@ -33,6 +31,6 @@ struct TrafficLightButton: View {
 
 struct TrafficLightButton_Previews: PreviewProvider {
     static var previews: some View {
-        TrafficLightButton()
+        TrafficLightButton(title: "Start", action: {})
     }
 }

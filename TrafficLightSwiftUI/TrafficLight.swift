@@ -19,6 +19,8 @@ struct TrafficLight: View {
     
     @State private var trafficLight = TrafficLights.red
     
+    @State private var text = "Start"
+    
     func nextColor() {
 
         let lightIsOn = 1.0
@@ -49,11 +51,15 @@ struct TrafficLight: View {
                 TrafficLightCircles(color: .red, opacity: redLight)
                 TrafficLightCircles(color: .yellow, opacity: yellowLight)
                 TrafficLightCircles(color: .green, opacity: greenLight)
-                .padding()
+                    .padding()
                 Spacer()
                 
-                TrafficLightButton()
-                    .padding()
+                TrafficLightButton(title: text)
+                {
+                    text = "Next"
+                    nextColor()
+                }
+                .padding()
             }
         }
     }
